@@ -1,0 +1,410 @@
+<section class="snap-start bg-zinc-900 space-6 min-h-screen">
+    <div class="container">
+        <h1 class="py-10 text-6xl md:text-8xl tracking-tight font-display font-black text-center
+            text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500"
+            data-aos="fade-down" data-aos-delay="300">
+            Statistics for 2022
+        </h1>
+
+        <table class="w-full my-8 max-w-xl mx-auto text-2xl md:text-4xl"
+            data-aos="fade-right" data-aos-delay="150">
+            <tbody>
+                <tr class="odd:bg-zinc-800" x-data="{ current: 0, target: 306, time: 600}" x-init="() => {
+                    start = current
+                    const interval = Math.max(time / (target - start), 5)
+                    const step = (target - start) /  (time / interval)
+                    const handle = window.setInterval(() => {
+                        if (current < target)
+                            current += step
+                        else {
+                            window.clearInterval(handle)
+                            current = target
+                        }
+                    }, interval)
+                }">
+                    <td class="text-left px-4 py-3">Movies watched</td>
+                    <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                        <span data-number x-text="Math.round(current)">306</span>
+                    </td>
+                </tr>
+                <tr class="odd:bg-zinc-800" x-data="{ current: 0, target: 26547, time: 600}" x-init="() => {
+                    start = current
+                    const interval = Math.max(time / (target - start), 5)
+                    const step = (target - start) /  (time / interval)
+                    const handle = window.setInterval(() => {
+                        if (current < target)
+                            current += step
+                        else {
+                            window.clearInterval(handle)
+                            current = target
+                        }
+                    }, interval)
+                }">
+                    <td class="text-left px-4 py-3">Tracks listened to</td>
+                    <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                        <span data-number x-text="Math.round(current)">26,547</span>
+                    </td>
+                </tr>
+                <tr class="odd:bg-zinc-800" x-data="{ current: 0, target: 105, time: 600}" x-init="() => {
+                    start = current
+                    const interval = Math.max(time / (target - start), 5)
+                    const step = (target - start) /  (time / interval)
+                    const handle = window.setInterval(() => {
+                        if (current < target)
+                            current += step
+                        else {
+                            window.clearInterval(handle)
+                            current = target
+                        }
+                    }, interval)
+                }">
+                    <td class="text-left px-4 py-3">Photos taken</td>
+                    <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                        <span data-number x-text="Math.round(current)">105</span>
+                    </td>
+                </tr>
+                <tr class="odd:bg-zinc-800" x-data="{ current: 0, target: 1201, time: 600}" x-init="() => {
+                    start = current
+                    const interval = Math.max(time / (target - start), 5)
+                    const step = (target - start) /  (time / interval)
+                    const handle = window.setInterval(() => {
+                        if (current < target)
+                            current += step
+                        else {
+                            window.clearInterval(handle)
+                            current = target
+                        }
+                    }, interval)
+                }">
+                    <td class="text-left px-4 py-3">Miles cycled</td>
+                    <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                        <span data-number x-text="Math.round(current)">1,201</span>
+                    </td>
+                </tr>
+                <tr class="odd:bg-zinc-800" x-data="{ current: 0, target: 1017, time: 600}" x-init="() => {
+                    start = current
+                    const interval = Math.max(time / (target - start), 5)
+                    const step = (target - start) /  (time / interval)
+                    const handle = window.setInterval(() => {
+                        if (current < target)
+                            current += step
+                        else {
+                            window.clearInterval(handle)
+                            current = target
+                        }
+                    }, interval)
+                }">
+                    <td class="text-left px-4 py-3">Miles walked</td>
+                    <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                        <span data-number x-text="Math.round(current)">1,017</span>
+                    </td>
+                </tr>
+                <tr class="odd:bg-zinc-800" x-data="{ current: 0, target: 127, time: 600}" x-init="() => {
+                    start = current
+                    const interval = Math.max(time / (target - start), 5)
+                    const step = (target - start) /  (time / interval)
+                    const handle = window.setInterval(() => {
+                        if (current < target)
+                            current += step
+                        else {
+                            window.clearInterval(handle)
+                            current = target
+                        }
+                    }, interval)
+                }">
+                    <td class="text-left px-4 py-3">Photos taken</td>
+                    <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                        <span data-number x-text="Math.round(current)">127</span>
+                    </td>
+                </tr>
+                <tr class="odd:bg-zinc-800" x-data="{ current: 0, target: 14, time: 600}" x-init="() => {
+                    start = current
+                    const interval = Math.max(time / (target - start), 5)
+                    const step = (target - start) /  (time / interval)
+                    const handle = window.setInterval(() => {
+                        if (current < target)
+                            current += step
+                        else {
+                            window.clearInterval(handle)
+                            current = target
+                        }
+                    }, interval)
+                }">
+                    <td class="text-left px-4 py-3">Blog posts written</td>
+                    <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                        <span data-number x-text="Math.round(current)">14</span>
+                    </td>
+                </tr>
+                <tr class="odd:bg-zinc-800" x-data="{ current: 0, target: 306, time: 600}" x-init="() => {
+                    start = current
+                    const interval = Math.max(time / (target - start), 5)
+                    const step = (target - start) /  (time / interval)
+                    const handle = window.setInterval(() => {
+                        if (current < target)
+                            current += step
+                        else {
+                            window.clearInterval(handle)
+                            current = target
+                        }
+                    }, interval)
+                }">
+                    <td class="text-left px-4 py-3">Tweets</td>
+                    <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                        <span data-number x-text="Math.round(current)">256</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="snap-start py-4 pb-20 min-h-screen">
+    <div class="container">
+        <p class="py-10 text-6xl md:text-8xl tracking-tight font-display font-black text-center
+            text-transparent bg-clip-text bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+            data-aos="fade-down" data-aos-delay="150">
+            I watched <strong data-number>306</strong>&nbsp;movies, which is <strong data-number>3,256</strong> hours
+            or <strong data-number>195,360</strong>&nbsp;minutes.
+        </p>
+
+        <ol class="max-w-2xl mx-auto pl-4 list-decimal list-outside text-2xl md:text-4xl"
+            data-aos="fade-right" data-aos-delay="450">
+            <li>Everything Everywhere All At Once</li>
+            <li>Nope</li>
+            <li>Incendies</li>
+            <li>The Worst Person in the World</li>
+            <li>The Unbearable Weight of Massive Talent</li>
+            <li>Top Gun: Maverick</li>
+            <li>Untouchable</li>
+            <li>The Rescue</li>
+            <li>Boiling Point</li>
+            <li>Paprika</li>
+        </ol>
+
+        <div class="my-16">
+            <ul class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+                <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+                    data-aos="zoom-in-right" data-aos-delay="450">
+                    <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal" src="https://www.trovster.test/images/movies/poster/[3190]_top-gun-maverick.jpg" />
+                </li>
+                <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+                    data-aos="zoom-in-down" data-aos-delay="450">
+                    <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal" src="https://www.trovster.test/images/movies/poster/[3201]_hustle.jpg" />
+                </li>
+                <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+                    data-aos="zoom-in-down" data-aos-delay="450">
+                    <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal" src="https://www.trovster.test/images/movies/poster/[3188]_24-hour-party-people.jpg" />
+                </li>
+                <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+                    data-aos="zoom-in-left" data-aos-delay="450">
+                    <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal" src="https://www.trovster.test/images/movies/poster/[3201]_hustle.jpg" />
+                </li>
+                <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+                    data-aos="zoom-in-right" data-aos-delay="450">
+                    <img class="block w-full" src="https://www.trovster.test/images/movies/poster/[3188]_24-hour-party-people.jpg" />
+                </li>
+                <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+                    data-aos="zoom-in-up" data-aos-delay="450">
+                    <img class="block w-full" src="https://www.trovster.test/images/movies/poster/[3201]_hustle.jpg" />
+                </li>
+                <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+                    data-aos="zoom-in-up" data-aos-delay="450">
+                    <img class="block w-full" src="https://www.trovster.test/images/movies/poster/[3190]_top-gun-maverick.jpg" />
+                </li>
+                <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+                    data-aos="zoom-in-left" data-aos-delay="450">
+                    <img class="block w-full" src="https://www.trovster.test/images/movies/poster/[3201]_hustle.jpg" />
+                </li>
+            </ul>
+        </div>
+
+        <div class="my-16 grid lg:grid-cols-2 gap-8">
+            <blockquote class="max-w-xl mx-auto text-xl"
+                data-aos="flip-right" data-aos-duration="1000">
+                <p class="italic">
+                    A "found footage" horror that I had little knowledge or expectations about. After an action-packed introduction,
+                    a brisk setup introducing the characters and their quest, it moves down to the catacombs underneath Paris.
+                    Similar to The Descent, it uses the claustrophobic setting to great effect. This is combined with a great telling
+                    of Dante’s Inferno 9 Circles of Hell allegory and creepy characters it has genuinely frightening moments. Running
+                    at a brisk 90 minutes, it uses every inch of its runtime to fantastic effect.
+                </p>
+                <p class="text-zinc-500">As Above, So Below</p>
+            </blockquote>
+
+            <blockquote class="max-w-xl mx-auto text-xl"
+                data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
+                <p class="italic">
+                    A "found footage" horror that I had little knowledge or expectations about. After an action-packed introduction,
+                    a brisk setup introducing the characters and their quest, it moves down to the catacombs underneath Paris.
+                    Similar to The Descent, it uses the claustrophobic setting to great effect. This is combined with a great telling
+                    of Dante’s Inferno 9 Circles of Hell allegory and creepy characters it has genuinely frightening moments. Running
+                    at a brisk 90 minutes, it uses every inch of its runtime to fantastic effect.
+                </p>
+                <p class="text-zinc-500">As Above, So Below</p>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<section class="snap-start min-h-screen pb-20">
+    <div class="container">
+        <h2 class="py-10 text-6xl md:text-8xl tracking-tight font-display font-black text-center
+            text-transparent bg-clip-text bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+            data-aos="fade-down" data-aos-delay="150">
+            I walked a total of <strong data-number>1,017</strong>&nbsp;miles and
+            cycled <strong data-number>1,201</strong> miles.
+        </h2>
+    </div>
+
+    <div class="container grid md:grid-cols-2 gap-4">
+        <div data-aos="fade-right" data-aos-delay="500">
+            <h3 class="py-10 text-4xl md:text-5xl tracking-tight font-display font-black text-center
+                text-transparent bg-clip-text bg-gradient-to-tl from-green-300 via-blue-500 to-purple-600">
+                My longest ride was 26.83&nbsp;miles.
+            </h3>
+
+            <div class="mx-auto max-w-lg stroke-blue-500">
+                {% include "./svg/ride.svg" %}
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-delay="750">
+            <h3 class="py-10 text-4xl md:text-5xl tracking-tight font-display font-black text-center
+                text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500">
+                I walked 8.6&nbsp;miles on the 14th of September.
+            </h2>
+
+            <div class="mx-auto max-w-lg stroke-red-500">
+                {% include "./svg/walk.svg" %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="snap-start min-h-screen pb-20">
+    <div class="container">
+        <h2 class="py-10 text-6xl md:text-8xl tracking-tight font-display font-black text-center
+            text-transparent bg-clip-text bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
+            data-aos="fade-down" data-aos-delay="150">
+            I listened to <strong data-number>26,547</strong>&nbsp;tracks,
+            totalling <strong data-number>79,641</strong>&nbsp;minutes.
+        </h2>
+
+        <div class="my-16 grid lg:grid-cols-2 gap-8">
+            <div data-aos="fade-right" data-aos-delay="500">
+                <h3 class="mb-4 text-3xl tracking-tight font-display font-black">Top Tracks</h3>
+                <table class="w-full max-w-xl mx-auto text-2xl">
+                    <thead>
+                        <tr>
+                            <th class="text-left px-4 py-2 text-base">Artist</td>
+                            <th class="text-left px-4 py-2 text-base">Song</td>
+                            <th class="text-right px-4 py-2 text-base">Count</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="odd:bg-zinc-800">
+                            <td class="text-left px-4 py-3">Ben Folds</td>
+                            <td class="text-left px-4 py-3">In Between Days</td>
+                            <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                                <span data-number>20</span>
+                            </td>
+                        </tr>
+                        <tr class="odd:bg-zinc-800">
+                            <td class="text-left px-4 py-3">Bruce Lee Band</td>
+                            <td class="text-left px-4 py-3">Dance Dance Revolution</td>
+                            <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                                <span data-number>18</span>
+                            </td>
+                        </tr>
+                        <tr class="odd:bg-zinc-800">
+                            <td class="text-left px-4 py-3">Bright Eyes</td>
+                            <td class="text-left px-4 py-3">Soul Singer in a Session</td>
+                            <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                                <span data-number>14</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div data-aos="fade-left" data-aos-delay="750">
+                <h3 class="mb-4 text-3xl tracking-tight font-display font-black">Top Artists</h3>
+                <table class="w-full max-w-xl mx-auto text-2xl">
+                    <thead>
+                        <tr>
+                            <th class="text-left px-4 py-2 text-base">Artist</td>
+                            <th class="text-right px-4 py-2 text-base">Count</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="odd:bg-zinc-800">
+                            <td class="text-left px-4 py-3">Ben Folds</td>
+                            <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                                <span data-number>96</span>
+                            </td>
+                        </tr>
+                        <tr class="odd:bg-zinc-800">
+                            <td class="text-left px-4 py-3">Bruce Lee Band</td>
+                            <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                                <span data-number>70</span>
+                            </td>
+                        </tr>
+                        <tr class="odd:bg-zinc-800">
+                            <td class="text-left px-4 py-3">Bright Eyes</td>
+                            <td class="text-right px-4 py-3 tabular-nums tracking-tighter">
+                                <span data-number>56</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="snap-start min-h-screen pb-20">
+    <div class="container">
+        <h2 class="py-10 text-6xl md:text-8xl tracking-tight font-display font-black text-center text-white"
+            data-aos="fade-down" data-aos-delay="150">
+            Photos
+        </h2>
+    </div>
+    <div class="mx-4">
+        <div>
+            <ul class="flex flex-wrap justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+                <li class="aspect-square flex-none w-44 sm:w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:rotate-2 transition-transform duration-200 hover:rotate-0"
+                    data-aos="zoom-in" data-aos-delay="150">
+                    <img src="https://www.trovster.test/images/photos/thumbnails/307812222_806830787403671_679083603303123733_n.jpg" class="md:rotate-2 transition-transform duration-200 hover:rotate-0" />
+                </li>
+                <li class="aspect-square flex-none w-44 sm:w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:-rotate-2 transition-transform duration-200 hover:rotate-0"
+                    data-aos="zoom-in" data-aos-delay="250">
+                    <img src="https://www.trovster.test/images/photos/activities/thumbnails/9TcZuIObfFBon6ZB7ef8Onk6pCiX3oz5J1YcccEMGo8-1536x2048.jpg" class="md:-rotate-2 transition-transform duration-200 hover:rotate-0" />
+                </li>
+                <li class="aspect-square flex-none w-44 sm:w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:rotate-2 transition-transform duration-200 hover:rotate-0"
+                    data-aos="zoom-in" data-aos-delay="350">
+                    <img src="https://www.trovster.test/images/photos/activities/thumbnails/ACvxJbdEzpVtaVhmXjHkp0YW5HSZ9fXEbYvum-q0ynk-1536x2048.jpg" class="md:rotate-2 transition-transform duration-200 hover:rotate-0" />
+                </li>
+                <li class="aspect-square flex-none w-44 sm:w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:-rotate-2 transition-transform duration-200 hover:rotate-0"
+                    data-aos="zoom-in" data-aos-delay="450">
+                    <img src="https://www.trovster.test/images/photos/thumbnails/278064547_126217749776160_8597280476272529311_n.jpg" class="md:-rotate-2 transition-transform duration-200 hover:rotate-0" />
+                </li>
+                <li class="aspect-square flex-none w-44 sm:w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:rotate-2 transition-transform duration-200 hover:rotate-0"
+                    data-aos="zoom-in" data-aos-delay="550">
+                    <img src="https://www.trovster.test/images/photos/thumbnails/307812222_806830787403671_679083603303123733_n.jpg" class="md:rotate-2 transition-transform duration-200 hover:rotate-0" />
+                </li>
+                <li class="aspect-square flex-none w-44 sm:w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:-rotate-2 transition-transform duration-200 hover:rotate-0"
+                    data-aos="zoom-in" data-aos-delay="650">
+                    <img src="https://www.trovster.test/images/photos/activities/thumbnails/9TcZuIObfFBon6ZB7ef8Onk6pCiX3oz5J1YcccEMGo8-1536x2048.jpg" class="md:-rotate-2 transition-transform duration-200 hover:rotate-0" />
+                </li>
+                <li class="aspect-square flex-none w-44 sm:w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:rotate-2 transition-transform duration-200 hover:rotate-0"
+                    data-aos="zoom-in" data-aos-delay="750">
+                    <img src="https://www.trovster.test/images/photos/activities/thumbnails/ACvxJbdEzpVtaVhmXjHkp0YW5HSZ9fXEbYvum-q0ynk-1536x2048.jpg" class="md:rotate-2 transition-transform duration-200 hover:rotate-0" />
+                </li>
+                <li class="aspect-square flex-none w-44 sm:w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:-rotate-2 transition-transform duration-200 hover:rotate-0"
+                    data-aos="zoom-in" data-aos-delay="850">
+                    <img src="https://www.trovster.test/images/photos/thumbnails/278064547_126217749776160_8597280476272529311_n.jpg" class="md:-rotate-2 transition-transform duration-200 hover:rotate-0" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

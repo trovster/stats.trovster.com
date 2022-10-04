@@ -1,0 +1,14 @@
+{
+  "title": "Statistics",
+  "summary": "Statistics for my life.",
+  "author": "Trevor Morris",
+  "url": "https://stats.trovster.com",
+  "email": "contact@trovster.com",
+  "telephone": "07884 182 178",
+  "address": {
+    "street": "21 Little Tixall Lane",
+    "locality": "Great Haywood",
+    "region": "Staffordshire",
+    "postcode": "ST18 0SE"
+  }
+}
