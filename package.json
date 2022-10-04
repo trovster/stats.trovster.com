@@ -28,8 +28,8 @@
     "tailwindcss": "^3.1.8"
   },
   "scripts": {
-    "start": "eleventy --serve & npx mix watch & npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --watch",
-    "build": "npx mix --production && NODE_ENV=production npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --minify && ELEVENTY_PRODUCTION=true eleventy",
+    "start": "npx mix watch & npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --watch & npx @11ty/eleventy --serve & ",
+    "build": "npx mix --production && NODE_ENV=production npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --minify && MY_ENVIRONMENT=production npx @11ty/eleventy",
     "test": "echo \"Warning: No tests\" && exit 0"
   },
   "dependencies": {
