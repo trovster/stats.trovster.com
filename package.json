@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "eleventy --serve & npx mix watch & npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && npx mix --production && NODE_ENV=production npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --minify",
+    "build": "npx mix --production && NODE_ENV=production npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --minify && ELEVENTY_PRODUCTION=true eleventy",
     "test": "echo \"Warning: No tests\" && exit 0"
   },
   "dependencies": {
