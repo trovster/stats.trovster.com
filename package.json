@@ -30,7 +30,7 @@
   "scripts": {
     "start": "eleventy --serve & npx mix watch & npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --watch",
     "build": "ELEVENTY_PRODUCTION=true eleventy && npx mix --production && NODE_ENV=production npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Warning: No tests\" && exit 0"
   },
   "dependencies": {
     "alpinejs": "^3.10.3",
