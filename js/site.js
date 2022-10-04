@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstats_trovster_com=self.webpackChunkstats_trovster_com||[]).push([[752],{191:(t,s,r)=>{var e=r(306),a=r(711),n=r.n(a);window.Alpine=e.Z,e.Z.start(),n().init()}},t=>{t.O(0,[898],(()=>{return s=191,t(t.s=s);var s}));t.O()}]);
