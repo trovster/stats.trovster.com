@@ -22,16 +22,16 @@
         <link rel="stylesheet" href="{{ "/css/site.css" | url | absoluteUrl(config.baseUrl) }}"/>
     </head>
 
-    <body class="bg-zinc-900 text-gray-200 space-y-6 font-sans {{ bodyClass }}">
+    <body class="bg-zinc-900 text-zinc-300 space-y-6 font-sans {{ bodyClass }}">
         <main class="[&>a]:underline [&>a]:underline-offset-8 [&>a]:hover:no-underline [&>a]:focus:no-underline">
             <div class="snap-y snap-mandatory snap-always">
                 {{ content | safe }}
             </div>
         </main>
 
-        <footer class="py-6 text-sm text-zinc-500 text-center">
+        <footer class="py-6 text-sm text-zinc-400 text-center">
             <div class="container vcard space-y-1">
-                <h3>© 2022 <em class="fn not-italic">{{ site.author }}</em></h3>
+                <p>© 2022 <em class="fn not-italic">{{ site.author }}</em></p>
             </div>
         </footer>
 

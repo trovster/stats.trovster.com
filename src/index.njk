@@ -1,10 +1,13 @@
 <section>
     <div class="container text-center">
-        <h1 class="py-10 text-6xl md:text-8xl tracking-tight font-display font-black text-center
-            text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500">
+        <h1 class="py-10 text-6xl md:text-8xl tracking-tight font-display font-black text-center highlight">
             Statistics
         </h1>
 
-        <p><a href="{{ "/2022/" | url | absoluteUrl(config.baseUrl) }}" class="email underline underline-offset-8 hover:no-underline focus:no-underline">2022</a></p>
+        <ul class="space-y-4">
+            {% for year in years %}
+            <li><a href="{{ year | absoluteUrl(config.baseUrl) }}" class="text-2xl underline underline-offset-8 hover:no-underline focus:no-underline">{{ year }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
 </section>

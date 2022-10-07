@@ -7,3 +7,11 @@
 svg {
     @apply max-h-screen;
 }
+
+.highlight {
+    @apply text-transparent bg-clip-text bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500;
+}
+
+.highlight--alt {
+    @apply text-transparent bg-clip-text bg-gradient-to-tl from-green-300 via-blue-500 to-purple-600;
+}

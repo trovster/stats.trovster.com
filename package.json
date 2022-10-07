@@ -22,13 +22,15 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-fetch": "^3.0.0",
     "autoprefixer": "^10.4.12",
+    "dotenv": "^16.0.3",
     "laravel-mix": "^6.0.49",
     "postcss-import": "^15.0.0",
     "tailwindcss": "^3.1.8"
   },
   "scripts": {
-    "start": "npx mix watch & npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --watch & npx @11ty/eleventy --serve & ",
+    "start": "npx mix watch & npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --watch & npx @11ty/eleventy --serve",
     "build": "npx mix --production && NODE_ENV=production npx tailwindcss -i ./src/css/site.css -c tailwind.config.js -o ./dist/css/site.css --minify && MY_ENVIRONMENT=production npx @11ty/eleventy",
     "test": "echo \"Warning: No tests\" && exit 0"
   },

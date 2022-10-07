@@ -1,0 +1,29 @@
+<div class="container">
+    <h2 class="py-10 text-4xl sm:text-6xl md:text-8xl tracking-tight font-display font-black text-center highlight"
+        data-aos="fade-down" data-aos-delay="150">
+        I walked a total of <strong data-number>{{ activities.walked.distance | miles | formattedNumber }}</strong> miles and
+        cycled <strong data-number>{{ activities.cycled.distance | miles | formattedNumber }}</strong> miles.
+    </h2>
+</div>
+
+<div class="container grid md:grid-cols-2 gap-4">
+    <div data-aos="fade-right" data-aos-delay="500">
+        <h3 class="py-10 mx-auto text-4xl md:text-5xl md:max-w-md tracking-tight font-display font-black text-center highlight--alt">
+            My longest bike ride was {{ activities.cycled.longest.distance | formattedNumber(2) }} miles.
+        </h3>
+
+        {# <div class="mx-auto max-w-lg stroke-blue-500">
+            {% include "../svg/ride.svg" %}
+        </div> #}
+    </div>
+
+    <div data-aos="fade-left" data-aos-delay="750">
+        <h3 class="py-10 mx-auto text-4xl md:text-5xl md:max-w-md tracking-tight font-display font-black text-center highlight--alt">
+            My longest walk was {{ activities.walked.longest.distance | formattedNumber(2) }} miles.
+        </h2>
+
+        {# <div class="mx-auto max-w-lg stroke-blue-500">
+            {% include "../svg/walk.svg" %}
+        </div> #}
+    </div>
+</div>

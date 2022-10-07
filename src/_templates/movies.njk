@@ -1,0 +1,8 @@
+<p class="py-10 text-4xl sm:text-6xl md:text-8xl tracking-tight font-display font-black text-center highlight"
+    data-aos="fade-down" data-aos-delay="150">
+    I watched <strong data-number>{{ movies.count | formattedNumber }}</strong> movies, which is
+    <strong data-number>{{ movies.time | hours | formattedNumber }}</strong> hours
+    or <strong data-number>{{ movies.time | minutes | formattedNumber }}</strong> minutes.
+</p>
+
+{% include './movies/top.njk' %}
