@@ -3,7 +3,6 @@ const fetch = require('@11ty/eleventy-fetch')
 module.exports = async (path, options = {}) => {
   const base = (path) => {
     const base = process.env.API_BASE || 'https://api.trovster.com/'
-    console.log(base)
     return `${base.replace(/\/$/, '')}/${path.replace(/^\//, '')}`
   }
 

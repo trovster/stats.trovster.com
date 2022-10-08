@@ -7,40 +7,14 @@
 </div>
 
 <div class="mx-4">
-    <div>
-        <ul class="flex flex-wrap justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-            <li class="aspect-square flex-none w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:rotate-2 transition-transform duration-200 hover:rotate-0"
-                data-aos="zoom-in" data-aos-delay="150">
-                <img src="https://www.trovster.com/images/photos/thumbnails/307812222_806830787403671_679083603303123733_n.jpg" alt="x" />
-            </li>
-            <li class="aspect-square flex-none w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:-rotate-2 transition-transform duration-200 hover:rotate-0"
-                data-aos="zoom-in" data-aos-delay="250">
-                <img src="https://www.trovster.com/images/photos/activities/thumbnails/9TcZuIObfFBon6ZB7ef8Onk6pCiX3oz5J1YcccEMGo8-1536x2048.jpg" alt="x" />
-            </li>
-            <li class="aspect-square flex-none w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:rotate-2 transition-transform duration-200 hover:rotate-0"
-                data-aos="zoom-in" data-aos-delay="350">
-                <img src="https://www.trovster.com/images/photos/activities/thumbnails/ACvxJbdEzpVtaVhmXjHkp0YW5HSZ9fXEbYvum-q0ynk-1536x2048.jpg" alt="x" />
-            </li>
-            <li class="aspect-square flex-none w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:-rotate-2 transition-transform duration-200 hover:rotate-0"
-                data-aos="zoom-in" data-aos-delay="450">
-                <img src="https://www.trovster.com/images/photos/thumbnails/278064547_126217749776160_8597280476272529311_n.jpg" alt="x" />
-            </li>
-            <li class="aspect-square flex-none w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:rotate-2 transition-transform duration-200 hover:rotate-0"
-                data-aos="zoom-in" data-aos-delay="550">
-                <img src="https://www.trovster.com/images/photos/thumbnails/307812222_806830787403671_679083603303123733_n.jpg" alt="x" />
-            </li>
-            <li class="aspect-square flex-none w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:-rotate-2 transition-transform duration-200 hover:rotate-0"
-                data-aos="zoom-in" data-aos-delay="650">
-                <img src="https://www.trovster.com/images/photos/activities/thumbnails/9TcZuIObfFBon6ZB7ef8Onk6pCiX3oz5J1YcccEMGo8-1536x2048.jpg" alt="x" />
-            </li>
-            <li class="aspect-square flex-none w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:rotate-2 transition-transform duration-200 hover:rotate-0"
-                data-aos="zoom-in" data-aos-delay="750">
-                <img src="https://www.trovster.com/images/photos/activities/thumbnails/ACvxJbdEzpVtaVhmXjHkp0YW5HSZ9fXEbYvum-q0ynk-1536x2048.jpg" alt="x" />
-            </li>
-            <li class="aspect-square flex-none w-64 lg:w-96 overflow-hidden rounded-xl sm:rounded-2xl md:-rotate-2 transition-transform duration-200 hover:rotate-0"
-                data-aos="zoom-in" data-aos-delay="850">
-                <img src="https://www.trovster.com/images/photos/thumbnails/278064547_126217749776160_8597280476272529311_n.jpg" alt="x" />
-            </li>
-        </ul>
-    </div>
+    <ul class="flex flex-wrap justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+        {% for photo in photos.top %}
+        <li class="aspect-square flex-none w-full max-w-sm sm:w-64 lg:w-96 overflow-hidden
+            rounded-xl sm:rounded-2xl {{ 'md:rotate-2' if loop.index % 2 else 'md:-rotate-2' }}
+            transition-transform duration-200 hover:rotate-0"
+            data-aos="zoom-in" data-aos-delay="150">
+            <img src="{{ photo.src }}" alt="{{ photo.title }}" />
+        </li>
+        {% endfor %}
+    </ul>
 </div>
