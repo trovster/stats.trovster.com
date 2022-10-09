@@ -1,6 +1,8 @@
 <ol class="max-w-2xl mx-auto pl-4 list-decimal list-outside leading-tight space-y-2 text-lg sm:text-2xl md:text-4xl"
     data-aos="fade-right" data-aos-delay="450">
     {% for movie in movies.top %}
-    <li><a href="{{ movie.links.permalink }}">{{ movie.title }}</a></li>
+    <li><a href="{{ movie.links.permalink }}"
+        class="underline underline-offset-4 decoration-2 decoration-fuchsia-500
+        hover:decoration-wavy focus:no-underline">{{ movie.title }}</a></li>
     {% endfor %}
 </ol>

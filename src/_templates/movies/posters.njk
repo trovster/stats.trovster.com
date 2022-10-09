@@ -1,6 +1,7 @@
 <div class="my-16">
     <ul class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
         {% for movie in movies.top %}
+        {% if movie.poster %}
         <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
             data-aos="zoom-in-right" data-aos-delay="450">
             <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
@@ -9,6 +10,7 @@
                 alt="{{ movie.title }}"
                 loading="lazy" />
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </div>
