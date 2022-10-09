@@ -1,36 +1,14 @@
-{# <div class="my-16">
+<div class="my-16">
     <ul class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+        {% for movie in movies.top %}
         <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
             data-aos="zoom-in-right" data-aos-delay="450">
-            <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal" height="400" width="270" src="https://www.trovster.com/images/movies/poster/[3190]_top-gun-maverick.jpg" alt="Top Gun: Maverick movie poster" />
+            <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
+                height="400" width="270"
+                src="{{ movie.poster }}"
+                alt="{{ movie.title }}"
+                loading="lazy" />
         </li>
-        <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
-            data-aos="zoom-in-down" data-aos-delay="450">
-            <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal" height="400" width="270" src="https://www.trovster.com/images/movies/poster/[3201]_hustle.jpg" alt="Hustle movie poster" />
-        </li>
-        <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
-            data-aos="zoom-in-down" data-aos-delay="450">
-            <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal" height="400" width="270" src="https://www.trovster.com/images/movies/poster/[3188]_24-hour-party-people.jpg" alt="24 Hour Party People movie poster" />
-        </li>
-        <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
-            data-aos="zoom-in-left" data-aos-delay="450">
-            <img class="block w-full grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal" height="400" width="270" src="https://www.trovster.com/images/movies/poster/[3201]_hustle.jpg" alt="Hustle movie poster" />
-        </li>
-        <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
-            data-aos="zoom-in-right" data-aos-delay="450">
-            <img class="block w-full" height="400" width="270" src="https://www.trovster.com/images/movies/poster/[3188]_24-hour-party-people.jpg" alt="24 Hour Party People movie poster" />
-        </li>
-        <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
-            data-aos="zoom-in-up" data-aos-delay="450">
-            <img class="block w-full" height="400" width="270" src="https://www.trovster.com/images/movies/poster/[3201]_hustle.jpg" alt="Hustle movie poster" />
-        </li>
-        <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
-            data-aos="zoom-in-up" data-aos-delay="450">
-            <img class="block w-full" height="400" width="270" src="https://www.trovster.com/images/movies/poster/[3190]_top-gun-maverick.jpg" alt="Top Gun: Maverick movie poster" />
-        </li>
-        <li class="bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500"
-            data-aos="zoom-in-left" data-aos-delay="450">
-            <img class="block w-full" height="400" width="270" src="https://www.trovster.com/images/movies/poster/[3201]_hustle.jpg" alt="Hustle movie poster" />
-        </li>
+        {% endfor %}
     </ul>
-</div> #}
+</div>
