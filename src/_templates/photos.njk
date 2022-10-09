@@ -13,7 +13,12 @@
             rounded-xl sm:rounded-2xl {{ 'md:rotate-2' if loop.index % 2 else 'md:-rotate-2' }}
             transition-transform duration-200 hover:rotate-0"
             data-aos="zoom-in" data-aos-delay="150">
-            <img src="{{ photo.src }}" alt="{{ photo.title }}" />
+            <img
+                src="{{ photo.src }}"
+                alt="{{ photo.title }}"
+                height="640"
+                width="640"
+                loading="lazy" />
         </li>
         {% endfor %}
     </ul>
