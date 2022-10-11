@@ -6,24 +6,32 @@
     </h2>
 </div>
 
-<div class="container grid md:grid-cols-2 gap-4">
+<div class="container grid md:grid-cols-2 gap-4 text-center">
     <div data-aos="fade-right" data-aos-delay="500">
-        <h3 class="py-10 mx-auto text-4xl md:text-5xl md:max-w-md tracking-tight font-display font-black text-center highlight--alt">
+        <h3 class="py-10 mx-auto text-4xl md:text-5xl md:max-w-md tracking-tight font-display font-black highlight--alt">
             My longest bike ride was {{ activities.cycled.longest.distance | formattedNumber(2) }} miles.
         </h3>
 
-        {# <div class="mx-auto max-w-lg stroke-blue-500">
-            {% include "../svg/ride.svg" %}
-        </div> #}
+        <div class="mx-auto max-w-lg stroke-blue-500 mb-4">
+            {{ activities.cycled.longest.polyline | mapsvg | safe }}
+        </div>
+
+        <a href="{{ activities.cycled.longest.links.permalink }}" class="group text-xl">
+            View <span class="underline underline-offset-4 decoration-2 decoration-blue-400 group-hover:decoration-wavy group-focus:no-underline">{{ activities.cycled.longest.title }}</span>
+        </a>
     </div>
 
     <div data-aos="fade-left" data-aos-delay="750">
-        <h3 class="py-10 mx-auto text-4xl md:text-5xl md:max-w-md tracking-tight font-display font-black text-center highlight--alt">
+        <h3 class="py-10 mx-auto text-4xl md:text-5xl md:max-w-md tracking-tight font-display font-black highlight--alt">
             My longest walk was {{ activities.walked.longest.distance | formattedNumber(2) }} miles.
         </h2>
 
-        {# <div class="mx-auto max-w-lg stroke-blue-500">
-            {% include "../svg/walk.svg" %}
-        </div> #}
+        <div class="mx-auto max-w-lg stroke-blue-500 mb-4">
+            {{ activities.walked.longest.polyline | mapsvg | safe }}
+        </div>
+
+        <a href="{{ activities.walked.longest.links.permalink }}" class="group text-xl">
+            View <span class="underline underline-offset-4 decoration-2 decoration-blue-400 group-hover:decoration-wavy group-focus:no-underline">{{ activities.walked.longest.title }}</span>
+        </a>
     </div>
 </div>
