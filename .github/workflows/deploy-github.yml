@@ -1,12 +1,6 @@
-name: Build and Deploy
+name: Build and Deploy to GitHub
 env:
-  GITHUB_URL: https://stats.trovster.com
-on:
-  push:
-    branches:
-      - main
-      - develop
-  workflow_dispatch:
+  GITHUB_URL: https://trovster.github.io
 
 jobs:
   build-and-deploy:
@@ -21,7 +15,7 @@ jobs:
         run: |
           npm ci
           npm test
-          npm run build
+          npm run build -- --pathprefix=/stats.trovster.com/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
