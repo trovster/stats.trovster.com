@@ -1,6 +1,10 @@
 name: Build and Deploy to GitHub
 env:
   GITHUB_URL: https://trovster.github.io
+on:
+  push:
+    branches:
+      - github
 
 jobs:
   build-and-deploy:

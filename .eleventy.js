@@ -12,6 +12,8 @@ module.exports = config => {
   config.addFilter('hours', hours)
   config.addFilter('minutes', minutes)
 
+  config.addPassthroughCopy('CNAME')
+
   return {
     dir: {
       input: 'src',
