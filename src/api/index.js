@@ -7,10 +7,14 @@ module.exports = async (path, options = {}) => {
   }
 
   const url = base(path)
+  const headers = {
+    Authorization: "Bearer ${process.env.API_TOKEN}"
+  }
 
   return fetch(url, {
     duration: 0,
     type: 'json',
-    ...options
+    headers,
+    ...options,
   })
 }

@@ -16,6 +16,9 @@ jobs:
           persist-credentials: false
 
       - name: Install and Build 🔧
+        env:
+          API_BASE: ${{ vars.API_BASE }}
+          API_KEY: ${{ secrets.API_KEY }}
         run: |
           npm ci
           npm test
