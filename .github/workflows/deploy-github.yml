@@ -15,10 +15,16 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install and Build 🔧
+      - name: Create .env file
         env:
           API_BASE: ${{ vars.API_BASE }}
           API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          touch .env
+          echo API_BASE=${{ vars.API_BASE }} >> .env
+          echo API_KEY=${{ secrets.API_KEY }} >> .env
+
+      - name: Install and Build 🔧
         run: |
           npm ci
           npm test
