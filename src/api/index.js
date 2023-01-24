@@ -8,7 +8,7 @@ module.exports = async (path, options = {}) => {
 
   const url = base(path)
   const headers = {
-    Authorization: "Bearer ${process.env.API_TOKEN}"
+    Authorization: "Bearer ${process.env.API_KEY}"
   }
 
   return fetch(url, {
