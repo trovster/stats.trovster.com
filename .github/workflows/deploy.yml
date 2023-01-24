@@ -17,14 +17,19 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
       - name: Create .env file
         env:
           API_BASE: ${{ vars.API_BASE }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           touch .env
-          echo API_BASE=${{ vars.API_BASE }} >> .env
-          echo API_KEY=${{ secrets.API_KEY }} >> .env
+          echo API_BASE="${{ vars.API_BASE }}" >> .env
+          echo API_KEY="${{ secrets.API_KEY }}" >> .env
 
       - name: Install and Build 🔧
         run: |
