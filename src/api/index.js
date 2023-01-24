@@ -8,13 +8,15 @@ module.exports = async (path, options = {}) => {
 
   const url = base(path)
   const headers = {
-    Authorization: "Bearer ${process.env.API_KEY}"
+    Authorization: `Bearer ${process.env.API_KEY}`
   }
 
   return fetch(url, {
     duration: 0,
     type: 'json',
-    headers,
+    fetchOptions: {
+      headers,
+    },
     ...options,
   })
 }
